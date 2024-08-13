@@ -3,14 +3,21 @@ body{
     align-items: center;
     text-align: center;
     display: flex;
-    background-image: url(image/cats.jpg);
+    background-image: url(image/fundo.jpg);
 }
 .navegação {
-    width: 400px;
-    height: 400px;
-    background-color: black;
-    color: white;
+    width: 700px;
+    height: 500px;
+    background-color: pink;
+    color: rgb(66, 66, 66);
 }
-.titulo {
-    color: red;
+.titulo, h3, h4, h5, h6{
+    color: rgb(34, 34, 34);
+    margin: 8px;
+    padding: 5px;
+    padding-bottom: 50px;
+}
+a {
+    text-decoration: none;
+    color: rgba(58, 58, 255, 0.849);
 }
