@@ -12,7 +12,10 @@ body{
     background-color: rgb(255, 168, 183);
     border-radius: 5%;
     margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding: 18px;
+    max-width: 90%;
 }
 .navegação2 {
     width: 850px;
