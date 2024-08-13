@@ -4,13 +4,13 @@ body{
     text-align: center;
     display: flex;
     background-image: url(image/fundo.jpg);
-    
+    background-size: cover;
 }
 .navegação {
-    width: 750px;
-    height: 550px;
+    width: 80%;
+    height: auto;
     background-color: rgb(255, 168, 183);
-    border-radius: 10%;
+    border-radius: 5%;
     margin: 50px;
     padding: 15px;
 }
