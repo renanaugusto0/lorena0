@@ -11,9 +11,7 @@ body{
     height: auto;
     background-color: rgb(255, 168, 183);
     border-radius: 5%;
-    margin: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: auto;
     padding: 18px;
 }
 .navegação2 {
