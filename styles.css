@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(36, 36, 36);
+}
+.navegação{
+    width: 80%;
+    height: auto;
+    background-color: rgba(255, 148, 166, 0.185);
+    border-radius: 5%;
+    margin: 70px;
+    padding: 30px;
+    text-align: center;
+}
+img{
+    width: 99%;
+    height: 99%;
+}
