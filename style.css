@@ -4,12 +4,20 @@ body{
     text-align: center;
     display: flex;
     background-image: url(image/fundo.jpg);
+    
 }
 .navegação {
-    width: 700px;
-    height: 500px;
-    background-color: pink;
-    color: rgb(66, 66, 66);
+    width: 750px;
+    height: 550px;
+    background-color: rgb(255, 168, 183);
+    border-radius: 10%;
+    margin: 50px;
+    padding: 15px;
+}
+.navegação2 {
+    width: 850px;
+    height: 650px;
+    background-color: rgb(255, 168, 183);
     border-radius: 10%;
     margin: 50px;
     padding: 15px;
