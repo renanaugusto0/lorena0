@@ -10,6 +10,9 @@ body{
     height: 500px;
     background-color: pink;
     color: rgb(66, 66, 66);
+    border-radius: 10%;
+    margin: 50px;
+    padding: 15px;
 }
 .titulo, h3, h4, h5, h6{
     color: rgb(34, 34, 34);
