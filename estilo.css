@@ -1,0 +1,51 @@
+/* Estilo para o corpo */
+body {
+    margin: 0; /* Remove margens do corpo */
+    padding: 0; /* Remove padding do corpo */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-image: url(image/fundo.jpg); /* Fundo da página */
+    background-size: cover; /* Cobrir a tela inteira */
+    height: 100vh; /* Define a altura do corpo como a altura total da janela */
+    overflow-x: hidden; /* Remove barra de rolagem horizontal */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilo para a navegação */
+.navegação {
+    width: 100vw; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    background-color: #fcab9b; /* Cor de fundo */
+    border-radius: 0; /* Remove bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    overflow: auto; /* Permite rolagem se necessário */
+}
+
+/* Estilo para links */
+a {
+    text-decoration: none;
+    color: rgb(77, 77, 255); /* Cor do link */
+}
+
+/* Estilo para a seção de imagens */
+#pre, #01, #02, #03 {
+    margin-top: 10px;
+}
+
+/* Estilo para imagens */
+img {
+    max-width: 60%; /* Largura máxima das imagens */
+    max-height: 60%; /* Altura máxima das imagens */
+    border-radius: 40px; /* Bordas arredondadas */
+}
+
+/* Estilo para outros textos */
+.titulo, h3, h4, h5, h6 {
+    color: rgb(34, 34, 34); /* Cor do texto */
+
+}
