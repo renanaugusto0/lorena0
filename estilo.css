@@ -1,51 +1,156 @@
 /* Estilo para o corpo */
 body {
-    margin: 0; /* Remove margens do corpo */
-    padding: 0; /* Remove padding do corpo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ajuste para coluna */
     justify-content: center;
     align-items: center;
-    text-align: center;
-    display: flex;
-    background-image: url(image/fundo.jpg); /* Fundo da página */
+    background-image: url('image/fundo.jpg'); /* Imagem de fundo */
     background-size: cover; /* Cobrir a tela inteira */
-    height: 100vh; /* Define a altura do corpo como a altura total da janela */
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+    min-height: 100vh; /* Altura mínima do corpo */
     overflow-x: hidden; /* Remove barra de rolagem horizontal */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
 }
 
 /* Estilo para a navegação */
 .navegação {
-    width: 100vw; /* Largura total da tela */
-    height: 100vh; /* Altura total da tela */
-    background-color: #fcab9b; /* Cor de fundo */
-    border-radius: 0; /* Remove bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
+    width: 90vw;
+    background-color: rgba(252, 171, 155, 0.9); /* Fundo semi-transparente */
+    border-radius: 15px; /* Bordas mais suaves */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    padding: 20px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
-    overflow: auto; /* Permite rolagem se necessário */
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Estilo para links */
 a {
     text-decoration: none;
-    color: rgb(77, 77, 255); /* Cor do link */
+    color: #ff6b81; /* Cor de link mais suave */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    margin: 10px; /* Espaçamento nos links */
 }
 
-/* Estilo para a seção de imagens */
-#pre, #01, #02, #03 {
-    margin-top: 10px;
+a:hover {
+    color: #ff4757; /* Cor do link ao passar o mouse */
+}
+
+/* Estilo para títulos e textos */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 15px;
+    color: #333; /* Cor de texto mais suave */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Efeito de sombra no texto */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #e63946; /* Vermelho mais romântico */
+    font-family: 'Dancing Script', cursive; /* Fonte romântica */
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff6b81;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-style: italic; /* Texto em itálico para dar um toque especial */
+    color: #2f3640;
+}
+
+/* Estilo para seções */
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 182, 193, 0.8); /* Fundo para destacar seções */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Sombra leve nas seções */
 }
 
 /* Estilo para imagens */
 img {
-    max-width: 60%; /* Largura máxima das imagens */
-    max-height: 60%; /* Altura máxima das imagens */
-    border-radius: 40px; /* Bordas arredondadas */
+    max-width: 100%; /* Ajuste de largura para melhor responsividade */
+    height: auto;
+    border-radius: 15px; /* Bordas mais suaves */
+    margin: 15px 0; /* Espaçamento nas imagens */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo para outros textos */
-.titulo, h3, h4, h5, h6 {
-    color: rgb(34, 34, 34); /* Cor do texto */
+img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
 
+/* Responsividade para dispositivos menores */
+@media only screen and (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Alinha no topo em dispositivos menores */
+    }
+
+    .navegação {
+        width: 95vw;
+        padding: 15px;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        max-width: 100%; /* Ajuste de imagens para telas menores */
+    }
+}
+
+/* Estilo para botões */
+button {
+    background-color: #e63946; /* Cor romântica */
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6b81; /* Cor mais clara ao passar o mouse */
+}
+
+/* Efeito especial para links */
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff6b81;
+    transition: width 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
 }
