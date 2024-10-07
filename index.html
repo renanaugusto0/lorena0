@@ -12,6 +12,16 @@
     <div class="navegação">
         <h1 class="titulo">Obrigado por tudo Lorena, estamos juntos a: </h1>
         <h3 id="timer"></h3>
+        <audio id="myAudio" src="amor.wav" controls autoplay></audio>
+        <script>
+            // Opção para garantir que o áudio comece automaticamente
+            window.addEventListener('load', () => {
+              const audio = document.getElementById('myAudio');
+              audio.play().catch((error) => {
+                console.log('Autoplay não permitido sem interação do usuário em alguns navegadores.', error);
+              });
+            });
+          </script>
         <a href="amo.html"><h2>COMECE POR AQUI;</h2></a>  
         <a href="fotos.html"><h2>Algumas fotinhas nossas</h2></a> 
         <a href="loveu.html"><h2>EU TE AMO</h2></a> 

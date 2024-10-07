@@ -36,7 +36,7 @@ function updateTimer() {
   }
 
   document.getElementById('timer').innerHTML =
-    `${years} anos, ${months} meses, ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+    `${months} meses, ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
 }
 
 setInterval(updateTimer, 1000);
