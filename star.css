@@ -1,0 +1,68 @@
+/* Fundo gradiente */
+body {
+    background: radial-gradient(circle at top, #2b1055, #07020d);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Texto com sombra */
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Links */
+.nav-link {
+    font-size: 1.2rem;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+/* Imagem */
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Botão */
+.btn-warning {
+    background-color: #ffdd57;
+    border: none;
+    color: #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-warning:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 223, 87, 0.5);
+}
