@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrela do nosso dia</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Estrela do Nosso Dia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="star.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="navegação">
-        <h1>O alinhamento das estrelas no dia em que tudo comecou</h1>
-        <p>Te amo muito.</p>
-        <img src="image/star.png">
-        <br><br><br><a href="index.html">Voltar para a página inicial</a><br><br><br>
+    <!-- Div para partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-light" href="#">
+                <i class="fas fa-star text-warning me-2"></i>Estrela do Nosso Dia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto bg-dark rounded shadow-lg">
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover-underline" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover-underline" href="amo.html">Te Amo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light hover-underline" href="fotos.html">Fotos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container text-center text-light mt-5 pt-5">
+        <h1 class="display-3 fw-bold text-shadow animate__animated animate__fadeInDown">
+            O alinhamento das estrelas no dia em que tudo começou
+        </h1>
+        <p class="lead fw-medium mt-4 animate__animated animate__fadeInUp">
+            Te amo muito 💖
+        </p>
+        <div class="mt-5">
+            <img src="image/star.png" alt="Estrela brilhante" class="img-fluid rounded-circle border border-3 border-light shadow-lg animate__animated animate__zoomIn">
+        </div>
+        <div class="mt-5">
+            <a href="index.html" class="btn btn-warning btn-lg fw-bold shadow">Voltar para a Página Inicial</a>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
