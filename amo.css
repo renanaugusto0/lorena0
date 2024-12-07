@@ -1,0 +1,44 @@
+/* Fundo gradiente */
+body {
+    background: radial-gradient(circle at top, #2b1055, #07020d);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Texto com sombra */
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Div das partículas */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Botão estilizado */
+.btn-warning {
+    background-color: #ffdd57;
+    border: none;
+    color: #000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-warning:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255, 223, 87, 0.5);
+}
+
+/* Ajuste de espaçamento para garantir visibilidade do botão */
+.container {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+}
