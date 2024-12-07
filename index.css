@@ -1,0 +1,70 @@
+/* Fundo Gradiente */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Texto com sombra */
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Menu de Navegação */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Dropdown */
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+/* Links do Menu */
+.nav-link {
+    font-size: 1.2rem;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffb6c1;
+    text-decoration: underline;
+}
+
+/* Imagem */
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Áudio estilizado */
+audio {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
